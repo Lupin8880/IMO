@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Achieve</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+  <ul>
+    <li><%= link_to "Top", root_path %></li>
+    <li><a href="#">Contact</a></li>
+    <li><%= link_to "Cinnabar", cinnabars_path %></li>
+  </ul>
+</header>
+
+<%= yield %>
+
+<footer>
+  <p>運営団体 インサイトマーケティング観測所</p>
+  <p>© 2011-2016 Insight Marketing Observatory</p>
+</footer>
+
+</body>
+</html>
